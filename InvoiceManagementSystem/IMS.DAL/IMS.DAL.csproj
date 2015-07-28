@@ -55,9 +55,43 @@
     <Compile Include="Migrations\201507281346376_Add-Product-CostPrice.Designer.cs">
       <DependentUpon>201507281346376_Add-Product-CostPrice.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201507281519337_Model-BasketBasketItems-Add.cs" />
+    <Compile Include="Migrations\201507281519337_Model-BasketBasketItems-Add.Designer.cs">
+      <DependentUpon>201507281519337_Model-BasketBasketItems-Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507281523008_AddedBasket.cs" />
+    <Compile Include="Migrations\201507281523008_AddedBasket.Designer.cs">
+      <DependentUpon>201507281523008_AddedBasket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507281524108_AddedBasket1.cs" />
+    <Compile Include="Migrations\201507281524108_AddedBasket1.Designer.cs">
+      <DependentUpon>201507281524108_AddedBasket1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507281526537_AddedBasket2.cs" />
+    <Compile Include="Migrations\201507281526537_AddedBasket2.Designer.cs">
+      <DependentUpon>201507281526537_AddedBasket2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507281527460_AddedBasketItem.cs" />
+    <Compile Include="Migrations\201507281527460_AddedBasketItem.Designer.cs">
+      <DependentUpon>201507281527460_AddedBasketItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507281530390_BasketItemBasketAdded.cs" />
+    <Compile Include="Migrations\201507281530390_BasketItemBasketAdded.Designer.cs">
+      <DependentUpon>201507281530390_BasketItemBasketAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507281533009_BasketItemBasketAdded1.cs" />
+    <Compile Include="Migrations\201507281533009_BasketItemBasketAdded1.Designer.cs">
+      <DependentUpon>201507281533009_BasketItemBasketAdded1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507281533284_BasketItemBasketAddedFixed.cs" />
+    <Compile Include="Migrations\201507281533284_BasketItemBasketAddedFixed.Designer.cs">
+      <DependentUpon>201507281533284_BasketItemBasketAddedFixed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\BasketItem.cs" />
+    <Compile Include="Repositories\BasketRepository.cs" />
     <Compile Include="Repositories\CustomerRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
   </ItemGroup>
@@ -81,6 +115,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201507281346376_Add-Product-CostPrice.resx">
       <DependentUpon>201507281346376_Add-Product-CostPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507281519337_Model-BasketBasketItems-Add.resx">
+      <DependentUpon>201507281519337_Model-BasketBasketItems-Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507281523008_AddedBasket.resx">
+      <DependentUpon>201507281523008_AddedBasket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507281524108_AddedBasket1.resx">
+      <DependentUpon>201507281524108_AddedBasket1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507281526537_AddedBasket2.resx">
+      <DependentUpon>201507281526537_AddedBasket2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507281527460_AddedBasketItem.resx">
+      <DependentUpon>201507281527460_AddedBasketItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507281530390_BasketItemBasketAdded.resx">
+      <DependentUpon>201507281530390_BasketItemBasketAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507281533009_BasketItemBasketAdded1.resx">
+      <DependentUpon>201507281533009_BasketItemBasketAdded1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507281533284_BasketItemBasketAddedFixed.resx">
+      <DependentUpon>201507281533284_BasketItemBasketAddedFixed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
