@@ -1,4 +1,5 @@
-﻿using IMS.DAL.Data;
+﻿using IMS.Contracts.Repositories;
+using IMS.DAL.Data;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 /* Allows the abstraction of multiple repositories */
 namespace IMS.DAL.Repositories {
-    public abstract class BaseRepository<TEntity> where TEntity:class  {
+    public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity:class  {
         internal DataContext context;
         internal DbSet<TEntity> dbSet;
 
