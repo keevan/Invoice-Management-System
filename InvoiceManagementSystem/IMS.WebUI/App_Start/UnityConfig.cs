@@ -42,6 +42,7 @@ namespace IMS.WebUI.App_Start
             // container.RegisterType<IProductRepository, ProductRepository>();
 
             container.RegisterType<IBaseRepository<Customer>, CustomerRepository>();
+            container.RegisterType<IBaseRepository<Product>, ProductRepository>();
         }
     }
 }

@@ -12,10 +12,7 @@ using System.Web.Mvc;
 namespace IMS.WebUI.Controllers {
     public class HomeController : Controller {
 
-        IBaseRepository<Customer> customers;
-        public HomeController(IBaseRepository<Customer> customers) {
-            this.customers = customers;
-        }
+
         public ActionResult Index() {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
