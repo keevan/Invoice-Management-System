@@ -14,7 +14,8 @@ namespace IMS.Model {
         [MaxLength(255)]
         public string ImageUrl { get; set; }
         
-
+        // Cost of raw product from supplier
+        public decimal CostPrice { get; set; }
 
 
     }
