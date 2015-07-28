@@ -7,12 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace IMS.DAL.Repositories {
-    public class ProductRepository : BaseRepository<Product>{
-        public ProductRepository(DataContext context)
+    public class CustomerRepository : BaseRepository<Customer> {
+        public CustomerRepository(DataContext context)
             : base(context) {
                 if (context == null)
                     throw new ArgumentNullException();
         }
-
     }
 }

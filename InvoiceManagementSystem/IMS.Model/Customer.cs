@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace IMS.Model {
-    class Customer {
+    public class Customer {
         public int CustomerId;
         public string CustomerName;
 
