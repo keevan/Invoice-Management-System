@@ -30,6 +30,18 @@ namespace IMS.WebUI.Controllers
             return View(model);
         }
 
+        public ActionResult CreateProduct() {
+            var model = new Product();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult CreateProduct(Product product) {
+            products.Insert(product);
+            products.Commit();
+
+            return RedirectToAction("ProductList");
+        }
 
     }
 }
