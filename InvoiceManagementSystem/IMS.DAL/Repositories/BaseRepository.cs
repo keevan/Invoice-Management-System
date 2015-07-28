@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 /* Allows the abstraction of multiple repositories */
 namespace IMS.DAL.Repositories {
-    abstract class BaseRepository<TEntity> where TEntity:class  {
+    public abstract class BaseRepository<TEntity> where TEntity:class  {
         internal DataContext context;
         internal DbSet<TEntity> dbSet;
 

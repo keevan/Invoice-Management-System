@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace IMS.Model {
     public class Customer {
-        public int CustomerId;
-        public string CustomerName;
+        public int CustomerId { get; set; }
+        public string CustomerName { get; set; }
 
         public string Address1 {get;set;}
         public string Town { get; set; }
