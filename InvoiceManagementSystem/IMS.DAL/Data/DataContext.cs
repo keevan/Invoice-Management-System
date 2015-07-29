@@ -11,7 +11,7 @@ namespace IMS.DAL.Data {
     public class DataContext : DbContext {
 
         public DataContext() 
-            : base("DefaultConnection") {
+            : base("context") {
 
         }
 
