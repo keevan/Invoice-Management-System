@@ -1,4 +1,5 @@
-﻿using IMS.Model;
+﻿using IMS.DAL.Migrations;
+using IMS.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -28,10 +29,10 @@ namespace IMS.DAL.Data {
         /*
            Override method for use with automatic migrations
         */
-        /*protected override void OnModelCreating(DbModelBuilder modelBuilder) {
+        protected override void OnModelCreating(DbModelBuilder modelBuilder) {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataContext, Configuration>());
             base.OnModelCreating(modelBuilder);
-        }*/
+        }
 
     }
 }
