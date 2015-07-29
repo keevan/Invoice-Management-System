@@ -24,6 +24,12 @@ namespace IMS.DAL.Data {
         public DbSet<BasketItem> BasketItems { get; set; }
         public DbSet<Basket> Baskets { get; set; }
 
-
+        /*
+            Override method for use with automatic migrations
+         */
+        protected override void OnModelCreating(DbModelBuilder modelBuilder) {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataContext, Configuration>());
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

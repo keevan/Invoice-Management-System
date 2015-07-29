@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Configuration.cs" />
     <Compile Include="Data\DataContext.cs" />
     <Compile Include="Migrations\201507281310471_Initial.cs" />
     <Compile Include="Migrations\201507281310471_Initial.Designer.cs">
